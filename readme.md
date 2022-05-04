@@ -1,8 +1,6 @@
-<img src="images/picture08.jpeg" width="25%">
-<img src="images/picture09.jpeg" width="25%">
+<img src="images/picture08.jpeg" width="25%"><img src="images/picture09.jpeg" width="25%"><img src="images/picture14.jpeg" width="25%">
 
-<img src="images/picture12.jpeg" width="25%">
-<img src="images/picture13.jpeg" width="25%">
+<img src="images/picture12.jpeg" width="25%"><img src="images/picture13.jpeg" width="25%">
 
 # 使用上の注意
 
@@ -57,7 +55,7 @@
 4. ファームウェアのアップデートは、どのような影響があるかわからないため、案内がある場合を除いて行わないでください。
     * アップデートの際は、CLIの`dfu`コマンドにより、dfuモードに移行します。uf2ファイルをドライブにコピーするとアップデートが行われます。
     * また、USBを用いずにSWDでファームウェアを書き込むこともできます。(上級者向け)
-    * 書き込んであるファームは、[BLE Micro Pro Bootloader v0.11.0](https://github.com/sekigon-gonnoc/BLE-Micro-Pro/releases/download/v0.11.0/ble_micro_pro_bootloader_0_11_0.uf2)と[QMK for BMP v0.11.2](https://github.com/sekigon-gonnoc/qmk_firmware/releases/download/bmp-0.11.2/ble_micro_pro_default_0_11_2.uf2)です。
+    * 書き込んであるファームは、[BLE Micro Pro Bootloader v0.11.0](https://github.com/sekigon-gonnoc/BLE-Micro-Pro/releases/download/v0.11.0/ble_micro_pro_bootloader_0_11_0.uf2)と[QMK for BMP v0.11.2](https://github.com/sekigon-gonnoc/qmk_firmware/releases/download/bmp-0.11.2/ble_micro_pro_default_0_11_2_1.uf2)です。
 
 # ハードウェア
 
@@ -165,7 +163,7 @@ TAPTERM (編集しない)
 
 ### Black Magic ProbeとgdbによるNRF52への書き込み
 * [参考情報1](https://devzone.nordicsemi.com/nordic/nordic-blog/b/blog/posts/flashing-and-debugging-nrf5152-with-a-cheap-blackm)
-* [参考情報2](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads)
+* [参考情報2](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/downloads-1)
 * COMの番号は二つあるうちの一つ目を使う。
 * COM番号が大きいとうまく動かないことがあるため、デバイスマネージャーで、表示>表示デバイスの表示として、デバイスのアンインストールで不要なものを削除
     ```
@@ -192,7 +190,7 @@ TAPTERM (編集しない)
     st-flash --flash=128k write blackmagic-swlink.bin 0x8002000
     ```
 * その他の情報
-    * Firmwareのスリム化 https://primalcortex.wordpress.com/2017/06/13/building-a-black-magic-debug-probe/
+    * Firmwareのスリム化 [参考情報](https://primalcortex.wordpress.com/2017/06/13/building-a-black-magic-debug-probe/)
 
 # BLE Mirco Proファームウェア(uf2)からhexファイルへの変換方法
 
@@ -219,7 +217,7 @@ python2 uf2conv.py -c -b 0x10001000 -o UICR.bin UICR.uf2
 objcopy --adjust-vma 0xE0000 -I binary -O ihex BOOTLOADER.bin BOOTLOADER.hex
 objcopy --adjust-vma 0x10001000 -I binary -O ihex UICR.bin UICR.hex
 ```
-REGOUT0を3.3Vにする設定(muconでは使わない)
+REGOUT0を3.3Vにする設定(μ'conでは使わない)
 ```
 cat > hex/UICR_REGOUT0_5_3v3.hex << EOF
 :020000041000EA
