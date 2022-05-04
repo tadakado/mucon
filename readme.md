@@ -114,6 +114,10 @@ TAPTERM (編集しない)
 
 ドキュメントにはすべてのコマンドの説明が書かれていないようです。CLIの[コード](https://github.com/sekigon-gonnoc/qmk_firmware/blob/dev/ble_micro_pro/tmk_core/protocol/nrf/sdk15/cli.c)やAPIの[コード](https://github.com/sekigon-gonnoc/qmk_firmware/blob/dev/ble_micro_pro/tmk_core/protocol/nrf/sdk15/apidef.h)を参照ください。
 
+# ケース
+
+"case"にFusion360の設計ファイルおよび、3Dプリンタで印刷に用いるstlファイルがあります。
+
 # SWDでファームウェアの書き込み方法
 
 (確実なのはJ-Link、安価なのはST-Link V2またはBluePill)
