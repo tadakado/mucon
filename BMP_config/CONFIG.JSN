@@ -1,0 +1,16 @@
+{"config":{
+    "version":2,
+    "device_info":{"vid":"0xcafe","pid":"0x9001",
+        "name":"mucon","manufacture":"tadakado","description":"A music controller with 5 buttons"},
+    "matrix":{"rows":1,"cols":5,"device_rows":1,"device_cols":5,
+         "debounce":1,"is_left_hand":1,"diode_direction":0,
+         "row_pins":[6],
+         "col_pins":[16, 15, 18, 7, 9],
+    "layout":[1, 2, 3, 4, 5]},
+    "mode":"SINGLE","startup":1,
+    "peripheral":{"max_interval":200,"min_interval":100,"slave_latency":0},
+    "central":{"max_interval":200,"min_interval":100,"slave_latency":0},
+    "led":{"pin":1, "num":1},
+    "keymap":{"locale":"JP","use_ascii":0},
+    "reserved":[0,20,0,0,0,0,0,0]
+}}
