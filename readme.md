@@ -5,7 +5,7 @@
 # 使用上の注意
 
 1. USB-SWDボードを接続する際は、必ず、電源スイッチをオフにして電池を外してください。電源スイッチをオフにしないと 3.3VがBLEモジュール(MDBT50Q)に接続されません。また、ボード間の"V"と"B"の印刷が対応するように接続してください。
-2. BLE Micro Pro用に公開されている下記ファームウェアを、独自を書き込んでいます。本キーボードに関して、BLE Micro Pro作者のせきごんさんには問い合わせをしないでください。
+2. BLE Micro Pro用に公開されている下記ファームウェアを、独自に書き込んでいます。本キーボードに関して、BLE Micro Pro作者のせきごんさんには問い合わせをしないでください。
     * [BLE Micro Pro Bootloader](https://github.com/sekigon-gonnoc/BLE-Micro-Pro)
     * [QMK for BMP](https://github.com/sekigon-gonnoc/qmk_firmware)
 3. キーボード本体右上の穴はキーホルダー用の穴です。ショートの恐れがあるため、金属製リングの使用は避けてください。携帯ストラップなどに使われる紐がお勧めです。
