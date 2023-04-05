@@ -16,3 +16,19 @@
 #pragma once
 
 #include "quantum.h"
+
+/* This a shortcut to help you visually see your layout.
+ *
+ * The first section contains all of the arguments representing the physical
+ * layout of the board and position of the keys.
+ *
+ * The second converts the arguments into a two-dimensional array which
+ * represents the switch matrix.
+ */
+
+#define LAYOUT( \
+    k1, k2, k3, k4, k5 \
+) \
+{ \
+    { k1, k2, k3, k4, k5 } \
+}
