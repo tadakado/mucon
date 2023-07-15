@@ -1,0 +1,9 @@
+{"keyboard":"mucon",
+"keymap":"",
+"layout":"LAYOUT",
+"layers":[
+    ["LOWER", "KC_MPLY", "KC_VOLD", "KC_VOLU", "EX(TDD(KC_MNXT,KC_MPRV))"],
+    ["LOWER", "KC_ESC", "KC_LEFT", "KC_RGHT", "KC_F5"],
+    ["KC_NO", "ADV_ID0", "ADV_ID1", "ADV_ID2", "ADV_ID3"],
+    ["KC_NO", "AD_WO_L", "MUSIC", "PRSTT", "KC_NO"]
+]}
