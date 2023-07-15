@@ -13,4 +13,4 @@ CONFレイヤーのMUSICとPRSTTは、デフォルトレイヤーを切り替え
 | BLEレイヤー   | KC_NO | ADV_ID0 | ADV_ID1 | ADV_ID2 | ADV_ID3 |
 | CONFレイヤー  | KC_NO | AD_WO_L | MUSIC   | PRSTT   | DELBNDS |
 
-このファームウェアでのKEYMAP.JSNなどの設定ファイルによるカスタマイズは未検証です。
+このファームウェアでの設定ファイルによるカスタマイズ例は[KEYMAP.JSN](firm_0.11.2/KEYMAP.JSN)を参照ください。この例では、DELBNDSをKC_NOに変更して、不用意にペアリング済みのデバイスが削除されないようにしています。
