@@ -66,6 +66,7 @@
     * アップデートの際は、CLIの`dfu`コマンドにより、dfuモードに移行します。uf2ファイルをドライブにコピーするとアップデートが行われます。
     * また、USBを用いずにSWDでファームウェアを書き込むこともできます。(上級者向け)
     * 書き込んであるファームは、[BLE Micro Pro Bootloader v0.11.0](https://github.com/sekigon-gonnoc/BLE-Micro-Pro/releases/download/v0.11.0/ble_micro_pro_bootloader_0_11_0.uf2)と[QMK for BMP v0.11.2](https://github.com/sekigon-gonnoc/qmk_firmware/releases/download/bmp-0.11.2/ble_micro_pro_default_0_11_2_1.uf2)です。
+    * 実験的に[専用ファームウェア](firmware)を用意しました。LEDで接続接続デバイスを確認したり、Musicモードとプレゼンテーションモードを切り替えたりできます。
 
 # ハードウェア
 
